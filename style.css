@@ -23,7 +23,7 @@ display: block;
   width: 100%;
   height: 100%;
   background-size: cover;
-  text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 1);
+  
  }
 
   
@@ -35,16 +35,23 @@ display: block;
         border: 10px;
         padding: 2.5px;
         
+        
     }
 .nav-list {
-padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
  }
 
 .nav-link {
-    display: inline-block; 
+    float: left;
  } 
- a {
-    color: whitesmoke;
+ a { display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
  }
  a:hover {
@@ -62,32 +69,55 @@ color:  rgb(204, 192, 17);
   float: right;
 }
 
-h3 {
+h1{
+    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
     padding: 40px;
     text-align: center;
     font-size: 30px;
+    color: white;
+}
+h3 {text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }
 h4 {
     height: 75%;
     width: 50%;
     align-self: center;
+    color: white;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 p {
   font-style: italic;
   height: 75%;
   width: 50%;
-  padding:30px;
+  padding:20px;
   align-self: center;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
     z-index: 1;
 
 }
 
+.advan {
+    font-style: italic;
+    height: 75%;
+    width: 75%;
+    padding:20px;
+    align-self: center;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+}
 
 .circle {
     height: 400px;
     width: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(204, 192, 17);
     border-radius: 50%;
     position: relative;
     float: left;
@@ -97,20 +127,39 @@ p {
 
 aside {
     float: right;
-    width: 33.33%;
+    border-radius: 25px;
+    background-color: rgb(204, 192, 17);
+    padding: 20px;
+    width: 66%;
 }
 
 section {
     float: left;
-    width: 66.66%;
+    width: 33%;
 }
 
 article {
     float: left;
-    width: 66.66%;
+    width: 33%;
  
 
 }
+
+.circle-text, #googleMap {
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:  rgb(204, 192, 17);
+    overflow: hidden;
+    align-self: center;
+}
+
+.social {
+ display: inline-block;
+}
+
 footer {
     font-size: 10px;
     font: italic;
