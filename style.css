@@ -11,30 +11,32 @@ header {
     padding: 0;
 }
 
-
     body {
-font-family:Arial, Helvetica, sans-serif;
-background-image: url("scorpblade.jpg");
-background-color: rgba(0, 0, 0, 0.8);
-display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("scorpblade.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+     height: 100%;
+     background-size: cover;
   
  }
 
-  
+ div a {
 
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+
+}
     nav {
         color: whitesmoke;
-        background-color:rgb(70, 68, 68);
-        border-color: rgb(70, 68, 68);
-        border: 10px;
+        background-image: linear-gradient(to right, yellow , rgb(71, 66, 66));
         padding: 2.5px;
-        
+        font-weight: 900;
         
     }
 .nav-list {
@@ -42,7 +44,7 @@ display: block;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+
  }
 
 .nav-link {
@@ -53,6 +55,7 @@ display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 900;
  }
  a:hover {
 color:  rgb(204, 192, 17);
@@ -61,13 +64,6 @@ color:  rgb(204, 192, 17);
  a:visited{
      color: black;
  }
- .dot {
-  height: 400px;
-  width: 400px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  float: right;
-}
 
 h1{
     text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
@@ -75,7 +71,15 @@ h1{
     text-align: center;
     font-size: 30px;
     color: white;
+    font-weight: 900;
 }
+h2{ text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+    padding:15px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: 900;}
+
 h3 {text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
     padding: 40px;
     text-align: center;
@@ -100,9 +104,17 @@ p {
   padding:20px;
   align-self: center;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+ z-index: 1;
 
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
 
 .advan {
     font-style: italic;
@@ -129,22 +141,28 @@ aside {
     float: right;
     border-radius: 25px;
     background-color: rgb(204, 192, 17);
-    padding: 20px;
+    padding: 80px 0;
     width: 66%;
+    align-items: center;
 }
 
 section {
     float: left;
     width: 33%;
+    align-items: center;
 }
 
 article {
     float: left;
     width: 33%;
+    align-items: center;
  
 
 }
-
+.map{
+    display: flex;
+    justify-content: center;
+}
 .circle-text, #googleMap {
     width: 500px;
     height: 500px;
@@ -153,12 +171,24 @@ article {
     border-radius: 50%;
     background:  rgb(204, 192, 17);
     overflow: hidden;
-    align-self: center;
+    
 }
 
-.social {
- display: inline-block;
+.info{
+   
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+position: fixed;
 }
+form {
+    text-align: center;
+  }
+  input{
+    border-radius: 25px;
+  }
+input[type=text]:focus {
+    background-color: lightgoldenrodyellow;
+  }
 
 footer {
     font-size: 10px;
@@ -167,7 +197,5 @@ footer {
     bottom:0;
 
 }
-
-
 
 
