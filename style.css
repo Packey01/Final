@@ -13,7 +13,7 @@ header {
 
     body {
     font-family: 'Raleway', sans-serif;
-    background-image: url("scorpblade.jpg");
+    background-image: url("./scorpblade.jpg");
     background-color: rgba(0, 0, 0, 0.8);
     display: block;
     position: absolute;
